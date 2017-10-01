@@ -33,4 +33,3 @@ function viewCart() {
   }
   return output
 }
-
