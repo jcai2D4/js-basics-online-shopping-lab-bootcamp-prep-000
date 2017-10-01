@@ -28,4 +28,5 @@ function viewCart() {
       output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}.`
     else
       output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}, `
+    }
 }
