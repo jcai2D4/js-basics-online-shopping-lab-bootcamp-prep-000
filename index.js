@@ -27,10 +27,16 @@ function viewCart() {
     //console.log(`${i} key is ${Object.keys(cart[i])[0]} and value is $${Object.values(cart[i])[0]}`)
    var objKey = Object.keys(cart[i])[0];
    var objValue = cart[i][objKey]
+   if(cart.length===1)
+    console.log(`In your cart you have ${Object.keys(cart[0])[0]} at $${cart[0][objKey]}
+    if (cart.length === 2)
+      console.log(`In your cart you have ${Object.keys(cart[0])[0]} at $${cart[0][objKey]} and ${Object.keys(cart[1])[0]} at $${cart[1][objKey]}.`)
+    if(cart.lenght>2) {
     if (i < (cart.length-1))
       output += `${objKey} at $${objValue}, `;
     else if(i === (cart.length-1))
       output += `and ${objKey} at $${objValue}.`;
+    }
   }
   console.log(output);
 }
