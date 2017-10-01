@@ -28,7 +28,7 @@ function viewCart() {
    var objKey = Object.keys(cart[i])[0];
    var objValue = cart[i][objKey]
    if(cart.length===1)
-    console.log(`In your cart you have ${Object.keys(cart[0])[0]} at $${cart[0][objKey]}
+    console.log(`In your cart you have ${Object.keys(cart[0])[0]} at $${cart[0][objKey]}`)
     if (cart.length === 2)
       console.log(`In your cart you have ${Object.keys(cart[0])[0]} at $${cart[0][objKey]} and ${Object.keys(cart[1])[0]} at $${cart[1][objKey]}.`)
     if(cart.lenght>2) {
