@@ -30,8 +30,4 @@ function viewCart() {
       output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}, `
 }
 
-addToCart("bananas")
-addToCart("pancakes")
-addToCart("eggs")
-viewCart()
 //console.log(cart.length)
