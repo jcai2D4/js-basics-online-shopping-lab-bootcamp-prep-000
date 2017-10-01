@@ -45,3 +45,15 @@ function viewCart() {
   }
   console.log(output);
 }
+
+function total(){
+  var total = 0;
+  for(let i = 0 ; i < cart.length; i++){
+   var objKey = Object.keys(cart[i])[0];
+   var objValue = cart[i][objKey]
+   console.log(`objValue is ${objValue}`)
+   total += objValue
+   console.log(`total is ${total}`)
+  }
+  return total;
+}
