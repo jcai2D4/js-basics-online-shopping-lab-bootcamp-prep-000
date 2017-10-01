@@ -19,6 +19,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var output = "In your cart, you have "
   if (cart.length===0){
     return "Your shopping cart is empty."
   }
@@ -30,6 +31,8 @@ function viewCart() {
       output += `${objKey} at $${objValue}, `;
     else if(i === (cart.length-1))
       output += `and ${objKey} at $${objValue}.`;
+    else
+      console.log("Your shopping cart is empty.")
   }
-  return output
+  console.log(output);
 }
