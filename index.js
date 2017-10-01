@@ -19,16 +19,15 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var output = []
-  console.log(cart);
+  var output = "In your cart, you have "
   if (cart.length===0)
     return "Your shopping cart is empty."
-  for(let i = cart.length; i>0; i--){
-    if(cart.length>3)
-      return "";
-    if (cart.length===2)
-      return(`In your cart you have ${cart[0]} at $${cart[0]} and ${cart[1]} at $${cart[1]}`)
-  }
+  for(let i = 0 ; i < cart.length; i++){
+    console.log(`${i} key is ${Object.keys(cart[i])[i]} and value is ${Object.values(cart[i])[i]}`)
+    if (i=== cart.length)
+      output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}.`
+    else
+      output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}, `
 }
 
 addToCart("bananas")
