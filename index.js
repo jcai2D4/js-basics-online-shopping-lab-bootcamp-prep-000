@@ -29,5 +29,3 @@ function viewCart() {
     else
       output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}, `
 }
-
-//console.log(cart.length)
