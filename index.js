@@ -58,8 +58,8 @@ function total(){
   return total;
 }
 
-placeOrder(creditCardNumber){
-  if(creditCardNumber === null)
+function placeOrder(creditCardNumber){
+  if(creditCardNumber === undefined)
     console.log("Sorry, we don't have a credit card on file for you")
   else {
     cartTotal = parseInt(total())
