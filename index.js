@@ -23,7 +23,7 @@ function viewCart() {
   if (cart.length===0)
     return "Your shopping cart is empty."
   for(let i = 0 ; i < cart.length; i++){
-    console.log(`${i} key is ${Object.keys(cart[i])[i]} and value is ${Object.values(cart[i])[i]}`)
+    //console.log(`${i} key is ${Object.keys(cart[i])[i]} and value is ${Object.values(cart[i])[i]}`)
     if (i=== cart.length)
       output += `and ${Object.keys(cart[i])[i]} at ${Object.values(cart[i])[i]}.`
     else
