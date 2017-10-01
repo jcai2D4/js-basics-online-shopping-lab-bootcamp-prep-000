@@ -67,3 +67,20 @@ function placeOrder(creditCardNumber){
     cart = [];
   }
 }
+
+function removeFromCart(keyToBeRemoved){
+  var duplicateCounter = 0;
+  for(let i = 0 ; i < cart.length; i++){
+    var objKey = Object.keys(cart[i])[0];
+    if(objKey === keyToBeRemoved)
+    {
+      cart.splice(i,1);
+      duplicateCounter ++;
+      return cart;
+    }
+  }
+  if(duplicateCounter===0){
+    console.log("That item is not in your cart.")
+    return cart;
+  }
+}
